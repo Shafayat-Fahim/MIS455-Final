@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(to right, rgb(236, 233, 249), rgb(199, 244, 255));
+    color: rgb(33, 37, 41);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    background: rgb(47, 152, 63);
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+footer {
+    background-color: rgb(47, 152, 63);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+}
+
+.search-section {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.search-section input {
+    width: 70%;
+    max-width: 600px;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border: 2px solid rgb(33, 150, 243);
+    border-radius: 25px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.search-section input:focus {
+    border-color: rgb(30, 199, 112);
+    box-shadow: 0 0 10px rgba(30, 199, 112, 0.7);
+}
+
+.search-section button {
+    padding: 0.8rem 1.5rem;
+    margin-left: 1rem;
+    font-size: 1rem;
+    color: white;
+    background: rgb(3, 139, 24);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+
+.search-section button:hover {
+    background: rgb(30, 199, 112);
+}
+
