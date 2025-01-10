@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Times New Roman', Times, serif;
-    background: linear-gradient(to right, rgb(236, 233, 249), rgb(199, 244, 255));
+    background: rgb(247,247,247);
     color: rgb(33, 37, 41);
     min-height: 100vh;
     display: flex;
@@ -20,7 +20,7 @@ body {
 }
 
 header {
-    background: rgb(47, 152, 63);
+    background: rgb(226,26,112);
     color: rgb(255, 255, 255);
     font-family: 'Times New Roman', Times, serif;
     padding: 1.5rem 0;
@@ -34,7 +34,7 @@ header h1 {
 }
 
 footer {
-    background-color: rgb(47, 152, 63);
+    background-color: rgb(226,26,112);
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 1rem 0;
@@ -47,18 +47,18 @@ footer {
 }
 
 .search-section input {
-    width: 70%;
+    width: 65%;
     max-width: 600px;
     padding: 1rem;
     font-size: 1.1rem;
-    border: 2px solid rgb(33, 150, 243);
+    border: 2px solid rgb(226,26,112);
     border-radius: 25px;
     outline: none;
     transition: all 0.3s ease;
 }
 
 .search-section input:focus {
-    border-color: rgb(30, 199, 112);
+    border-color: rgb(226,26,112);
     box-shadow: 0 0 10px rgba(30, 199, 112, 0.7);
 }
 
@@ -67,7 +67,7 @@ footer {
     margin-left: 1rem;
     font-size: 1rem;
     color: white;
-    background: rgb(3, 139, 24);
+    background: rgb(226,26,112);
     border: none;
     border-radius: 25px;
     cursor: pointer;
@@ -75,6 +75,69 @@ footer {
 }
 
 .search-section button:hover {
-    background: rgb(30, 199, 112);
+    background: rgb(226,26,112);
+}
+
+#show-all-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#show-all-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: white;
+    background: rgb(226,26,112);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+#show-all-button:hover {
+    background: rgb(226,26,112);
+}
+
+.results-section {
+    margin: 2rem 0;
+}
+
+.result {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.result:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.result img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border: 1px black;
+}
+
+.result h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem;
+    color: rgb(226,26,112);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.result p {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1rem;
+    color: black;
 }
 
